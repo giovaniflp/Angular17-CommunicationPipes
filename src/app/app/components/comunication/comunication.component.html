@@ -1,0 +1,9 @@
+<h2>Comunication Tittle</h2>
+
+<app-filho-input [inputDados]="paiDados()"></app-filho-input>
+<app-filho-output (OutputDados)="outputDados.set($event)"></app-filho-output>
+
+
+<p>
+    {{outputDados()}}
+</p>
