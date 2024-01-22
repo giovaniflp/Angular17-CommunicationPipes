@@ -11,7 +11,7 @@ import { FilhoOutputComponent } from './app/components/comunication/filho-output
   standalone: true,
   imports: [CommonModule, RouterOutlet, ComunicationComponent, PipesComponent,FilhoInputComponent, FilhoOutputComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'comunication-pipes';

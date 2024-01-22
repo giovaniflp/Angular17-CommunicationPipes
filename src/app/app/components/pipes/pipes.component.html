@@ -1,1 +1,22 @@
-<p>pipes works!</p>
+<h2>Pipes</h2>
+<p>Pipes são formatações como por exemplo: Nova data mas com pipe fica menor</p>
+
+<h2>Com Pipe</h2>
+{{date() | date:"dd/MM/yyyy"}}
+<h2>Sem Pipe</h2>
+{{date()}}
+<h2>Pipe de Texto para maiusculo</h2>{{"Giovani uppercase Pipe" | uppercase}}
+<h2>Json Pipe</h2>
+{{jsonObject() | json}}
+<h2>Json sem Pipe</h2>
+{{jsonObject()}}
+
+<h2>Percent Pipe</h2>
+{{testeNumero()/71 | percent: '1.2-2'}}
+<h2>Number Pipe</h2>
+{{testeNumero( ) | number : "1.0-0"}}
+<h2>Currency Pipe</h2>
+{{testeNumero() | currency : 'BRL' }}
+
+<h2>Custom Pipe</h2>
+<p>Antes do Pipe: {{nomelegal()}}</p> Depois do pipe: {{nomelegal( )| customPipes: "argumentoCustomizado"}}
